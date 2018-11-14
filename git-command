@@ -1,0 +1,1 @@
+###git init git add dockercommands  git commit -m 'first docker usage'  git remote add origin https://github.com/sapra5379/testing.git;git pull origin master;git push origin master##
