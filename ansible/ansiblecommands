@@ -1,0 +1,273 @@
+    1  cat /.ssh/authorized_keys
+    2  cd .ssh/authorized_keys 
+    3  cat .ssh/authorized_keys
+    4  ssh-add ~/.ssh/id_rsa
+    5  ssh-keygen 
+    6  cd .ssh/
+    7  ll
+    8  vim id_rsa
+    9  vim id_rsa.pub 
+   10  ssh-copy-id aakash@34.227.222.158
+   11  ssh-copy-id root@34.227.222.158
+   12  cat ~/.ssh/id_rsa.pub | ssh aakash@34.227.222.158 "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"
+   13  ssh aakash@34.227.222.158
+   14  cd
+   15  cd /home/ubuntu/
+   16  ll
+   17  ssh -i Letschalktalk.pem ubuntu@34.227.222.158
+   18  chmod 700 .ssh
+   19  chmod 600 .ssh/authorized_keys
+   20  chmod 400 Letschalktalk.pem
+   21  restorecon -r -vv .ssh/authorized_keys
+   22  chmod 400 Letschalktalk.pem
+   23  ssh -i Letschalktalk.pem ubuntu@34.227.222.158
+   24  ssh aakash@34.227.222.158
+   25  cd
+   26  ssh aakash@34.227.222.158
+   27  su aakash
+   28  cd
+   29  apt-get update
+   30  apt-get install software-properties-common
+   31  apt-get install ansible
+   32  cd  /etc/ansible/
+   33  ll
+   34  cat ansible.cfg 
+   35  ansible
+   36  cd
+   37  ansible -v
+   38  cd /etc/ansible/
+   39  l
+   40  ll
+   41  vim hosts 
+   42  ssh-agent bash
+   43  vim /etc/ssh/sshd_config 
+   44  adduser aakash
+   45  /etc/init.d/ssh restart
+   46  ll
+   47  cd /home/ubuntu/
+   48  ll
+   49  ssh -i Letschalktalk.pem ubuntu@34.227.222.158
+   50  ssh -i Letschalktalk.pem ubuntu@172.16.24.9
+   51  ll
+   52  cd
+   53  ssh -i /home/ubuntu/Letschalktalk.pem ubuntu@172.16.24.6
+   54  ssh-copy-id -i /home/ubuntu/Letschalktalk.pem ubuntu@172.16.24.6
+   55  ssh-keygen 
+   56  ssh-copy-id ubuntu@172.16.24.6
+   57  cat ~/.ssh/id_rsa.pub | ssh ubuntu@172.16.24.6  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"
+   58  cat ~/.ssh/id_rsa.pub | ssh ubuntu@172.16.24.6  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys" 
+   59  cat ~/.ssh/id_rsa.pub | ssh -i /home/ubuntu/Letschalktalk.pem  ubuntu@172.16.24.6  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"
+   60  ssh ubuntu@172.16.24.6
+   61  ansible all -m ping
+   62  vim /etc/ansible/hosts 
+   63  ansible all -m ping
+   64  ping 172.16.24.6
+   65  ansible all -m ping
+   66  ssh ubuntu@172.16.24.6
+   67  ansible all -m ping
+   68  ansible all -m shell -a id
+   69  cat ~/.ssh/id_rsa.pub | ssh -i /home/ubuntu/Letschalktalk.pem  root@172.16.24.6  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"
+   70  vim /etc/ansible/hosts 
+   71  ansible all -m ping
+   72  ansible all -m ping -u ubuntu
+   73  vim /etc/ansible/hosts 
+   74  ansible all -m ping -u ubuntu
+   75  ansible -v
+   76  ansible version
+   77  ansible all -m uptime
+   78  git pull --rebase
+   79  apt-get install git
+   80  git pull --rebase
+   81  ansible all -m uptime
+   82  ansible all -m shell -a "uptime"
+   83  ansible all -m shell -a "top"
+   84  ansible all -m shell -a "uptime"
+   85  ansible all -m shell -a id
+   86  vim first.yml
+   87  ansible-playbook first.yml 
+   88  apt install rpm
+   89  rpm -ql ans
+   90  rpm -ql ansible
+   91  exit
+   92  vim aakash.yml
+   93  ansible-playbook aakash.yml --syntax-check
+   94  vim aakash.yml 
+   95  ansible-playbook aakash.yml --syntax-check
+   96  vim aakash.yml 
+   97  ansible-playbook aakash.yml --syntax-check
+   98  vim /etc/ansible/hosts 
+   99  ansible-playbook aakash.yml --syntax-check
+  100  vim /etc/ansible/hosts 
+  101  history
+  102  cat ~/.ssh/id_rsa.pub | ssh -i /home/ubuntu/Letschalktalk.pem  ec2-user@172.16.24.14  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"orized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/author
+  103  cat ~/.ssh/id_rsa.pub | ssh -i /home/ubuntu/Letschalktalk.pem  root@172.16.24.14  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"orized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/author
+  104  cat ~/.ssh/id_rsa.pub | ssh -i /home/ubuntu/Letschalktalk.pem  ec2-user@172.16.24.14  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"orized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/author
+  105  ssh ec2-user@172.16.24.14
+  106  ssh -i /home/ubuntu/Letschalktalk.pem  ec2-user@172.16.24.14
+  107  cat ~/.ssh/id_rsa.pub | ssh -i /home/ubuntu/Letschalktalk.pem  ec2-user@172.16.24.14  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"orized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/author
+  108  history
+  109  cat ~/.ssh/id_rsa.pub | ssh -i /home/ubuntu/Letschalktalk.pem  ec2-user@172.16.24.14  "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"
+  110  ssh ec2-user@172.16.24.14
+  111  ansible all -m shell -a "uptime"
+  112  vim /etc/ansible/hosts 
+  113  ansible all -m shell -a "uptime"
+  114  history | grep ansible
+  115  ansible all -m ping
+  116  ansible-playbook first.yml 
+  117  ansible-playbook aakash.yml 
+  118  ssh ec2-user@172.16.24.14
+  119  ansible-playbook aakash.yml 
+  120  ansible-playbook aakash.yml  --limit @/root/aakash.retry
+  121  ssh ec2-user@172.16.24.14
+  122  history
+  123  ansible-playbook aakash.yml -u root
+  124  ssh ec2-user@172.16.24.14
+  125  ansible-playbook aakash.yml 
+  126  cat ~/.ssh/id_rsa.pub | ssh -i /home/ubuntu/Letschalktalk.pem  ec2-user@172.16.24.14  " sudo su - && mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"orized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/author
+  127  vim aakash.yml 
+  128  ansible-playbook aakash.yml 
+  129  ssh ec2-user@172.16.24.14
+  130  vim aakash.
+  131  vim aakash.yml 
+  132  ansible-playbook aakash.yml 
+  133  ansible-doc -l | more 
+  134  ansible-help state
+  135  ansible-doc state
+  136  ansible-doc apt
+  137  ansible-playbook aakash.yml --list-hosts
+  138  rpm -ql  ansible
+  139  vim /etc/ansible/ansible.cfg 
+  140  hostnamectl set-hostname ansible
+  141  ansible all -m shell -a "uptime"
+  142  vim /etc/ansible/ansible.cfg '
+  143  vim /etc/ansible/ansible.cfg 
+  144  ansible all -m shell -a "uptime"
+  145  cp -rf /etc/ansible/ansible.cfg /root
+  146  cd /root/
+  147  ll
+  148  vim ansible.cfg 
+  149  cp -rf /etc/ansible/hosts /root
+  150  vim .ssh/test
+  151  mkdir aaksh
+  152  cd aaksh/
+  153  ll
+  154  cp /etc/ansible/hosts aaksh
+  155  ll
+  156  vim aaksh 
+  157  pwd
+  158  vim /root/aaksh/aaksh 
+  159  ll
+  160  cd /etc/ansible/
+  161  ll
+  162  rm -rf ansible.cfg hosts 
+  163  ll
+  164  vim /root/aaksh/aaksh 
+  165  vim /root/ansible.cfg 
+  166  vim /root/ansible.cfg
+  167  export ANSIBLE_CONFIG=/root/ansible.cfg
+  168  ansible all  -m shell -a uptime -v
+  169  cp /root/ansible.cfg /hello/hello
+  170  mkdir hello/hello
+  171  mkdir hello
+  172  cd hello/
+  173  ll
+  174  cd ..
+  175  ll
+  176  rm -rf hello/
+  177  ll
+  178  cd
+  179  mkdir /hello
+  180  cd /hello/
+  181  ll
+  182  mkdir 1234
+  183  cd 1234/
+  184  ll
+  185  pwd
+  186  cp /root/ansible.cfg /hello/1234
+  187  vim /hello/1234/ansible.cfg 
+  188  export ANSIBLE_CONFIG=/hello/1234/ansible.cfg
+  189  ansible all -m shell -a uptime -v
+  190  echo $ANSIBLE_CONFIG
+  191  exit
+  192  cd /etc/ansible/roles/apache/tasks/
+  193  ll
+  194  vim install.yml
+  195  vim configure.yml
+  196  vim service.yml
+  197  ll
+  198  vim /root/aakash.yml
+  199  ansible-playbook /root/aakash.yml
+  200  cd ..
+  201  ll
+  202  cd files/
+  203  ll
+  204  vim index.html
+  205  cp -rf /root/helloworld hello
+  206  ll
+  207  cd ..
+  208  ll
+  209  cat tasks/install.yml 
+  210  vim handlers/main.yml 
+  211  cat handlers/main.yml 
+  212  ll
+  213  cd meta/
+  214  ll
+  215  vim main.yml 
+  216  tree
+  217  cd..
+  218  cd ..
+  219  tree
+  220  cd ..
+  221  vim helloworld.yml
+  222  ll
+  223  vim ansible.cfg 
+  224  vim hosts 
+  225  vim helloworld.yml 
+  226  ansible-playbook helloworld.yml --syntex-check
+  227  ansible-playbook helloworld.yml --syntax-check
+  228  vim /etc/ansible/roles/apache/tasks/configure.yml
+  229  ansible-playbook helloworld.yml --syntax-check
+  230  ansible-playbook helloworld.yml 
+  231  history
+  232  ll
+  233  vim /root/aakash.yml 
+  234  vim helloworld.
+  235  vim helloworld.yml 
+  236  ansible-playbook helloworld.yml
+  237  cd roles/apache/
+  238  ll
+  239  vim tasks/configure.yml 
+  240  ansible-playbook helloworld.yml
+  241  cd ..
+  242  ansible-playbook helloworld.yml
+  243  cd
+  244  man ansible-vault
+  245  cd /etc/ansible/
+  246  ll
+  247  vim user.yml
+  248  ansible-playbook user.yml --syntax-check
+  249  ansible-vault encrypt user.yml 
+  250  cat user.yml 
+  251  vim user.yml 
+  252  ansible-vault view user.yml 
+  253  mane ansible-vault 
+  254  man ansible.cfg 
+  255  ansible-vault edit user.yml 
+  256  ansible-playbook user.yml
+  257  ansible-playbook user.yml --ask-vault-pass
+  258  vim user.
+  259  vim user.yml 
+  260  ansible-vault edit user.
+  261  ansible-vault edit user.yml 
+  262  ansible-playbook user.yml --ask-vault-pass
+  263  ll
+  264  vim /root/wow
+  265  ansible-playbook user.yml --vault-password-file /root/wow
+  266  ansible-vault rekey user.yml 
+  267  ansible-playbook user.yml --ask-vault-pass
+  268  ansible-vault decrypt user.yml 
+  269  vim user..y
+  270  cat user.yml 
+  271  cd
+  272  history
+  273  history > ansiblecommands
